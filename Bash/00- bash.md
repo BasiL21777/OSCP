@@ -1,0 +1,4 @@
+- [x] [[01- Bash Script]]
+- [x] [[02- IF , Loops , Functions]]
+- [x] [[03- Exercise 1]]
+- [ ] [[04- Exercise 2]]
