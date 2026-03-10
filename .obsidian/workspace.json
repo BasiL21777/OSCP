@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kali/09 Download Files & Customize Bash Environment.md",
+                "file": "Tools/03- Powershell& Powercat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09 Download Files & Customize Bash Environment"
+              "title": "03- Powershell& Powercat"
             }
           }
         ]
@@ -193,29 +193,34 @@
   },
   "active": "3cfa067567beb71a",
   "lastOpenFiles": [
+    "Tools/02- Socat.md",
+    "Tools/01- Netcat.md",
+    "Tools/00- tools.md",
+    "Tools/03- Powershell& Powercat.md",
+    "Tools/05- Wireshark.md",
+    "Tools/06- TCPdumb.md",
+    "What I Learned.md",
+    "Passive Recon/01- Intro.md",
+    "Passive Recon/imgs/Screenshot 2025-06-07 145206.png",
+    "Passive Recon/imgs",
+    "Passive Recon/05- Opensource Code Enumeration.md",
+    "Passive Recon/2.2 User Recon.md",
+    "Passive Recon/06- OSINT & Maltego.md",
+    "Passive Recon/00- passive.md",
+    "Kali/00 Kali.md",
+    "Kali/09 Download Files & Customize Bash Environment.md",
+    "http.md",
     "Kali/08 File and Command Monitoring.md",
     "Kali/07-Text Search ,Manipulation & Compare Files.md",
     "Kali/06- Manage Process.md",
     "Client Site Attacks/00- client site attacks.md",
-    "What I Learned.md",
     "🧠.md",
     "Kali/05- Piping & Redirection.md",
     "Kali/04 Bash Environment.md",
     "Kali/03-Search,Installand,RemoveTools.md",
     "Kali/02- Managing Kali Services.md",
     "Kali/01- Linux Basics.md",
-    "Kali/00 Kali.md",
     "images.jpg",
-    "http.md",
-    "Tools/05- Wireshark.md",
-    "Tools/00- tools.md",
-    "Exploits/00-.md",
-    "Active Recon/05- NFS , SMTP & SMNP Enumeration.md",
-    "Active Recon/04- SMB & NetBios Enumeration.md",
-    "Active Recon/03.1- NSE & Service Enumeration.md",
-    "Active Recon/03- Nmap.md",
-    "Active Recon/02- Port Scanning.md",
-    "Active Recon/01- DNS Enumeration.md",
-    "Active Recon/00- active.md"
+    "Exploits/00-.md"
   ]
 }

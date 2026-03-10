@@ -3,13 +3,13 @@
 ## 🕵️‍♂️ Lesson 1: Introduction to Information Gathering (Reconnaissance)
 
 ---
-### 📌 1. What is Information Gathering?
+###  1. What is Information Gathering?
 
 Information Gathering (also known as **Reconnaissance**) is the process of **collecting data about a target** without actively interacting with or alerting the target system. It is a **passive phase** that lays the foundation for further penetration testing.
 
 ---
 
-### 🎯 2. Why is it Important?
+###  2. Why is it Important?
 
 - It is **one of the most critical phases** in the penetration testing lifecycle.
     
@@ -20,11 +20,11 @@ Information Gathering (also known as **Reconnaissance**) is the process of **col
 
 ---
 
-### 🧠 3. When Do You Know You Have Enough Info?
+### 3. When Do You Know You Have Enough Info?
 
 Recon is based on two key **dimensions**:
 
-#### 1️⃣ Business Context
+#### Business Context
 
 - Company assets and services
     
@@ -35,9 +35,9 @@ Recon is based on two key **dimensions**:
 - Business structure (subsidiaries, domains, hosting partners)
     
 
-> 💡 This info helps you **think like an insider** and understand the **“why”** behind the systems.
+>  This info helps you **think like an insider** and understand the **“why”** behind the systems.
 
-#### 2️⃣ Technical Infrastructure
+####  Technical Infrastructure
 
 - IP addresses, subdomains, DNS records
     
@@ -48,25 +48,25 @@ Recon is based on two key **dimensions**:
 - Public code repositories, forgotten dev environments
     
 
-> 🔎 This info builds the **technical attack surface**.
+>  This info builds the **technical attack surface**.
 
 You have enough information **when you can confidently map out the business and technical ecosystem**, identify attack paths, and decide on the next tools or techniques to use.
 
-![[Screenshot 2025-06-07 145206.png]]
+![[Screenshot 2025-06-07 145206.png|697]]
 ---
 
-### ✅ 4. Pro Tips
+###  4. Pro Tips
 
-- 📝 **Always take notes.** Mind maps, spreadsheets, or note-taking apps like Obsidian can help you track your findings and see connections.
+-  **Always take notes.** Mind maps, spreadsheets, or note-taking apps like Obsidian can help you track your findings and see connections.
     
-- ❌ **Never delete raw data.** Even if something seems unimportant at first, it might become useful later.
+-  **Never delete raw data.** Even if something seems unimportant at first, it might become useful later.
     
-- 🔄 Recon is an **ongoing process** — you may need to go back and dig deeper later in your engagement.
+-  Recon is an **ongoing process** — you may need to go back and dig deeper later in your engagement.
     
 
 ---
 
-### ⚠️ Remember:
+###  Remember:
 
 - Passive ≠ harmless. Some OSINT techniques can still raise red flags (e.g., excessive DNS lookups).
     

