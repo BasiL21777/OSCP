@@ -1,5 +1,5 @@
 #kali
-## ⚙️ **Lesson 2: Managing Kali Services**
+##  **Lesson 2: Managing Kali Services**
 
 1. Kali comes with various services like **SSH**, **HTTP**, etc.
     
@@ -39,4 +39,4 @@
         
 
 ---
-
+[[03-Search,Installand,RemoveTools|Next]]

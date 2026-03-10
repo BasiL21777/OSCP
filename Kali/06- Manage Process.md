@@ -1,5 +1,5 @@
 #kali
-## 🧠 **Lesson #5: Managing Processes**
+## **Lesson #5: Managing Processes**
 
 1. **Foreground Processes:**
     
@@ -111,7 +111,7 @@
 
 8. **Solution: Use `screen` or `tmux`:**
     
-    ✅ These are terminal multiplexer tools that let you:
+     These are terminal multiplexer tools that let you:
     
     - Run long processes in **detachable sessions**.
         
@@ -136,9 +136,9 @@
 
 ------
 
-## 🧠 **Lesson: Linux Signals & Killing Processes**
+## **Lesson: Linux Signals & Killing Processes**
 
-### 🔫 Sending Signals to Processes:
+### Sending Signals to Processes:
 
 ```bash
 kill -[signal] PID
@@ -149,19 +149,19 @@ kill -[signal] PID
 
 ---
 
-### 🧱 Common Signal Types:
+###  Common Signal Types:
 
-|Signal|Command|Meaning|
-|---|---|---|
-|`-1`|`kill -1 PID`|**SIGHUP** – Hangup (terminal closed)|
-|`-2`|`kill -2 PID`|**SIGINT** – Interrupt (like `Ctrl+C`)|
-|`-15`|`kill -15 PID`|**SIGTERM** – Graceful termination (default)|
-|_(none)_|`kill PID`|Same as `kill -15`|
-|`-9`|`kill -9 PID`|**SIGKILL** – Force kill (cannot be ignored)|
+| Signal   | Command        | Meaning                                      |
+| -------- | -------------- | -------------------------------------------- |
+| `-1`     | `kill -1 PID`  | **SIGHUP** – Hangup (terminal closed)        |
+| `-2`     | `kill -2 PID`  | **SIGINT** – Interrupt (like `Ctrl+C`)       |
+| `-15`    | `kill -15 PID` | **SIGTERM** – Graceful termination (default) |
+| _(none)_ | `kill PID`     | Same as `kill -15`                           |
+| `-9`     | `kill -9 PID`  | **SIGKILL** – Force kill (cannot be ignored) |
 
 ---
 
-### 💥 When to Use Which Signal?
+###  When to Use Which Signal?
 
 - `-15` (default): Safest, allows the process to clean up.
     
@@ -174,7 +174,7 @@ kill -[signal] PID
 
 ---
 
-### 🔄 Killing Multiple Processes (same name):
+###  Killing Multiple Processes (same name):
 
 - If many processes have the **same name** (e.g., `sleep`), you **can’t loop by PID**, since they're non-sequential.
     
@@ -194,4 +194,7 @@ kill -[signal] PID
         ```
         
 
-✅ Make sure the **name is correct** — use `ps aux | grep sleep` to check.
+ Make sure the **name is correct** — use `ps aux | grep sleep` to check.
+
+---
+[[07-Text Search ,Manipulation & Compare Files|Next]]

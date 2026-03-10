@@ -1,5 +1,5 @@
 #kali
-## 🧠 **Lesson #2: Piping & Redirection**
+## **Lesson #2: Piping & Redirection**
 
 1. **Understanding Input/Output Streams:**
     
@@ -58,9 +58,9 @@
         
     - Example:
         
-        - `ls | rm` → ❌ won't work (missing arguments for `rm`)
+        - `ls | rm` →  won't work (missing arguments for `rm`)
             
-        - `ls | xargs rm` → ✅ deletes listed files
+        - `ls | xargs rm` →  deletes listed files
             
     - Count lines of multiple files:
         
@@ -70,3 +70,4 @@
             
 
 ---
+[[06- Manage Process|Next]]

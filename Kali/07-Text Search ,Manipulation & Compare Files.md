@@ -1,7 +1,7 @@
 #kali
-## 🧠 **#3 Text Search and Manipulation:**
+##  **#3 Text Search and Manipulation:**
 
-### 🔍 **`grep` – Search in files or outputs**
+###  **`grep` – Search in files or outputs**
 
 ```bash
 grep "pattern" file
@@ -14,7 +14,7 @@ grep "pattern" file
 - `-r` → Recursively search in all files in a directory
     
 
-✅ **Examples:**
+ **Examples:**
 
 ```bash
 grep hello file.txt
@@ -25,7 +25,7 @@ grep "pass\|admin" file        # search for 'pass' OR 'admin'
 
 ---
 
-🔠 **Regular Expressions in `grep`:**
+ **Regular Expressions in `grep`:**
 
 | Pattern  | Meaning                                |
 | -------- | -------------------------------------- |
@@ -37,7 +37,7 @@ grep "pass\|admin" file        # search for 'pass' OR 'admin'
 | `[^abc]` | Match anything **except** a, b, or c   |
 | `\|`     | OR operator                            |
 
-✅ Example:
+ Example:
 
 ```bash
 grep "^root" /etc/passwd       # lines starting with root
@@ -58,13 +58,13 @@ sed "s/old/new/g" file
 - `g` → global (replace all matches in line)
     
 
-✅ Example:
+ Example:
 
 ```bash
 sed "s/password/admin/g" file.txt
 ```
 
-🔁 **In-place editing:**
+ **In-place editing:**
 
 ```bash
 sed -i "s/password/admin/g" file.txt
@@ -72,7 +72,7 @@ sed -i "s/password/admin/g" file.txt
 
 ---
 
-📂 **`split` – Split large files (useful in bruteforce)**
+ **`split` – Split large files (useful in bruteforce)**
 
 ```bash
 split -l 1000 file new_
@@ -85,9 +85,9 @@ split -l 1000 file new_
 
 ---
 
-📊 **`cut` & `awk` – Column manipulation**
+ **`cut` & `awk` – Column manipulation**
 
-### ✂️ `cut`
+###  `cut`
 
 ```bash
 cut -d ":" -f 1,6,7 /etc/passwd
@@ -100,7 +100,7 @@ cut -d ":" -f 1,6,7 /etc/passwd
 
 ---
 
-### 📋 `awk` – More powerful text processor
+###  `awk` – More powerful text processor
 
 ```bash
 awk -F ":" '{ print $1, $6, $7 }' /etc/passwd
@@ -113,7 +113,7 @@ awk -F ":" '{ print $1, $6, $7 }' /etc/passwd
 - Can use conditions and logic (like if/else)
     
 
-✅ Example:
+Example:
 
 ```bash
 awk '{ if ($3 > 1000) print $1 }' /etc/passwd
@@ -121,7 +121,7 @@ awk '{ if ($3 > 1000) print $1 }' /etc/passwd
 
 ---
 
-🧪 **Practical Example: Analyze Logs**
+ **Practical Example: Analyze Logs**
 
 ```bash
 cat apache_logs | cut -d " " -f 1 | uniq -c | sort
@@ -137,9 +137,9 @@ cat apache_logs | cut -d " " -f 1 | uniq -c | sort
 
 ---
 
-## 🧠 **#4 Compare Files**
+##  **4 Compare Files**
 
-### 📊 **`comm` – Compare Two Sorted Files**
+###  **`comm` – Compare Two Sorted Files**
 
 ```bash
 comm file1 file2
@@ -156,13 +156,13 @@ comm file1 file2
 |2|Lines **only in `file2`**|
 |3|Lines in **both files**|
 
-✅ Example:
+Example:
 
 ```bash
 comm f1.txt f2.txt
 ```
 
-⚠️ **Files must be sorted**. Use:
+ **Files must be sorted**. Use:
 
 ```bash
 sort f1.txt -o f1.txt
@@ -170,7 +170,7 @@ sort f1.txt -o f1.txt
 
 ---
 
-### 🔍 **`diff` – Show Differences Line by Line**
+###  **`diff` – Show Differences Line by Line**
 
 ```bash
 diff file1 file2
@@ -181,7 +181,7 @@ diff file1 file2
 - Shows **what needs to change** in `file1` to make it identical to `file2`
     
 
-### 🧾 Example Output:
+###  Example Output:
 
 ```
 3c3
@@ -190,7 +190,7 @@ diff file1 file2
 > Hello World!
 ```
 
-🧠 **Explanation**:
+ **Explanation**:
 
 - Line 3 is different:
     
@@ -203,7 +203,7 @@ diff file1 file2
 
 ---
 
-### ✅ Other useful `diff` options:
+### Other useful `diff` options:
 
 |Option|Description|
 |---|---|
@@ -213,11 +213,11 @@ diff file1 file2
 |`-B`|Ignore blank lines|
 |`-r`|Compare directories recursively|
 
-🧪 Example:
+ Example:
 
 ```bash
 diff -y file1.txt file2.txt
 ```
 
 ---
-hello
+[[08 File and Command Monitoring|Next]]

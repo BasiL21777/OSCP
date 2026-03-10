@@ -6,7 +6,7 @@
 - [x] [[00- tools]]
 - [x] [[00- bash]]
 - [x] [[00- passive]]
-- [x] [[00- active]]
+- [ ] [[00- active]]
 - [ ] [[00- scanning]]
 - [ ] [[00- web]]
 - [ ] [[00- buffer overflow]]

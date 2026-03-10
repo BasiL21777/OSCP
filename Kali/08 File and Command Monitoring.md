@@ -3,9 +3,9 @@ Here's your enhanced notes on **File and Command Monitoring**, written in your c
 
 ---
 
-## 🧠File and Command Monitoring**
+## File and Command Monitoring**
 
-### 📁 **Log File Monitoring:**
+###  **Log File Monitoring:**
 
 - Some files (like logs) are **dynamically updated** by the system or services.
     
@@ -16,14 +16,14 @@ Here's your enhanced notes on **File and Command Monitoring**, written in your c
     ```
     
 
-🔁 **When you:**
+ **When you:**
 
 - Open browser and type `127.0.0.1` → logs update
     
 - Access a path like `127.0.0.1/test` → logs update again
     
 
-### 📡 **Live log tracking with `tail`:**
+###  **Live log tracking with `tail`:**
 
 ```bash
 tail -f /var/log/apache2/access.log
@@ -36,14 +36,14 @@ tail -f /var/log/apache2/access.log
 
 ---
 
-### 📊 **Command Monitoring with `watch`:**
+###  **Command Monitoring with `watch`:**
 
 - `watch` is used to **re-run commands at intervals**
     
 - Default interval = **2 seconds**
     
 
-✅ Example:
+ Example:
 
 ```bash
 watch free
@@ -52,7 +52,7 @@ watch free
 - Displays RAM usage every 2 seconds
     
 
-### 🛠 Advanced usage:
+###  Advanced usage:
 
 ```bash
 watch -n 0.5 -d free
@@ -65,7 +65,7 @@ watch -n 0.5 -d free
 
 ---
 
-### 💾 **Disk Monitoring:**
+###  **Disk Monitoring:**
 
 - `df` → Show disk usage and partitions
     
@@ -74,13 +74,13 @@ watch -n 0.5 -d free
 df
 ```
 
-✅ Monitor it in real-time:
+ Monitor it in real-time:
 
 ```bash
 watch -n 0.5 -d df
 ```
 
-🔁 While watching `df`, try:
+ While watching `df`, try:
 
 ```bash
 mv ~/rockyou.txt ~/Desktop
@@ -88,3 +88,5 @@ mv ~/rockyou.txt ~/Desktop
 
 - You'll see changes in available disk space.
     
+---
+[[09 Download Files & Customize Bash Environment|Next]]

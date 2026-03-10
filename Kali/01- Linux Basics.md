@@ -1,5 +1,5 @@
 #kali
-## 🧠 **Lesson 1: Linux Basics**
+## **Lesson 1: Linux Basics**
 
 1. **Getting Help:**
     
@@ -43,7 +43,7 @@
     
     - `locate flag.txt` – Fast search using a **pre-built database** (works for any file).
         
-        - ⚠️ Needs updated DB: run `sudo updatedb` to refresh it.
+        -  Needs updated DB: run `sudo updatedb` to refresh it.
             
     - `find . -name flag.txt` – Powerful command to **search by name, type, permissions, etc.**
         
@@ -53,3 +53,4 @@
 
 ---
 
+[[02- Managing Kali Services|Next]]

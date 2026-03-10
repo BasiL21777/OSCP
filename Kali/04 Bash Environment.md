@@ -1,5 +1,5 @@
 #kali
-## 🧠 **Lesson: Bash Environment**
+## **Lesson: Bash Environment**
 
 1. **Variables in Bash:**
     
@@ -48,7 +48,7 @@
             
     - Now you can run `myscript` from anywhere.
         
-    - ⚠️ This change is **temporary** — it disappears after logout.
+    -  This change is **temporary** — it disappears after logout.
         
 6. **Permanently Adding Scripts to PATH:**
     
@@ -113,3 +113,6 @@
             
         - `;` means: **run the next command unconditionally**.
             
+
+---
+[[05- Piping & Redirection|Next]]

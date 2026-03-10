@@ -1,5 +1,5 @@
 #kali
-## 🔍 **Lesson 3: Search, Install, and Remove Tools**
+## **Lesson 3: Search, Install, and Remove Tools**
 
 1. **APT (Advanced Package Tool)** – Main package manager in Debian-based systems like Kali.
     
@@ -33,3 +33,4 @@
             
 
 ---
+[[04 Bash Environment|Next]]
