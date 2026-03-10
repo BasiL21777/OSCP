@@ -1,8 +1,4 @@
 #kali 
-Here's your enhanced notes on **File and Command Monitoring**, written in your consistent format and cleaned up for clarity:
-
----
-
 ## File and Command Monitoring**
 
 ###  **Log File Monitoring:**
@@ -89,4 +85,4 @@ mv ~/rockyou.txt ~/Desktop
 - You'll see changes in available disk space.
     
 ---
-[[09 Download Files & Customize Bash Environment|Next]]
+### **[[09 Download Files & Customize Bash Environment|Next]]** 

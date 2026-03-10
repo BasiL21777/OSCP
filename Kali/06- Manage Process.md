@@ -197,4 +197,4 @@ kill -[signal] PID
  Make sure the **name is correct** — use `ps aux | grep sleep` to check.
 
 ---
-[[07-Text Search ,Manipulation & Compare Files|Next]]
+### **[[07-Text Search ,Manipulation & Compare Files|Next]]**

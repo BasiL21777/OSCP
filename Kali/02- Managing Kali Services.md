@@ -36,7 +36,9 @@
 7. **SSH into a machine:**
     
     - `ssh username@ip_address` – Connect to a remote system via SSH.
+
+    - [[SSH]] : for more info
         
 
 ---
-[[03-Search,Installand,RemoveTools|Next]]
+### **[[03-Search,Installand,RemoveTools|Next]]**

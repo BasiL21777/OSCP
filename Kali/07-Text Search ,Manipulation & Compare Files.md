@@ -72,7 +72,7 @@ sed -i "s/password/admin/g" file.txt
 
 ---
 
- **`split` – Split large files (useful in bruteforce)**
+ **`split` – Split large files (useful in brute force)**
 
 ```bash
 split -l 1000 file new_
@@ -220,4 +220,4 @@ diff -y file1.txt file2.txt
 ```
 
 ---
-[[08 File and Command Monitoring|Next]]
+### **[[08 File and Command Monitoring|Next]]**
