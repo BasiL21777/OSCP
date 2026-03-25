@@ -80,8 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6c24c5339eaa70ef",
@@ -193,7 +192,7 @@
   },
   "active": "3cfa067567beb71a",
   "lastOpenFiles": [
-    "Bandit CTF.md",
+    "Kali/Bandit CTF.md",
     "Kali/Find & String.md",
     "What I Learned.md",
     "Kali/00 Kali.md",
