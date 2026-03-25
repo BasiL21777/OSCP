@@ -15,30 +15,15 @@
               "type": "markdown",
               "state": {
                 "file": "What I Learned.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "pinned": true,
               "icon": "lucide-file",
               "title": "What I Learned"
             }
-          },
-          {
-            "id": "71e82c7372757084",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Tools/00- tools.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00- tools"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -70,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "find ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -202,44 +187,58 @@
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "71e82c7372757084",
+  "active": "3cfa067567beb71a",
   "lastOpenFiles": [
+    "Bandit CTF.md",
+    "Kali/Find & String.md",
     "What I Learned.md",
-    "Kali/03-Search,Installand,RemoveTools.md",
-    "Kali/09 Download Files & Customize Bash Environment.md",
-    "Kali/08 File and Command Monitoring.md",
+    "Kali/00 Kali.md",
+    "Bash/00- bash.md",
+    "Kali/01- Linux Basics.md",
     "Kali/07-Text Search ,Manipulation & Compare Files.md",
+    "Kali/08 File and Command Monitoring.md",
+    "Bash/01- Bash Script.md",
+    "Bash/02- IF , Loops , Functions.md",
+    "Bash/03- Exercise 1.md",
+    "Active Recon/00- active.md",
+    "Kali/09 Download Files & Customize Bash Environment.md",
     "Kali/06- Manage Process.md",
     "Kali/05- Piping & Redirection.md",
     "Kali/04 Bash Environment.md",
-    "Buffer Overflow/01- Intro.md",
+    "Kali/03-Search,Installand,RemoveTools.md",
     "Kali/02- Managing Kali Services.md",
+    "Scanner/Scan.md",
+    "Scanner/Untitled/bassel/Nessus/2.png",
+    "Scanner/Untitled/bassel/Nessus/4.png",
+    "Scanner/Untitled/bassel/Nessus/3.png",
+    "Scanner/Untitled/bassel/Nessus/1.png",
+    "Scanner/Untitled/bassel/Nessus/temp/results2.png",
+    "Scanner/Untitled/bassel/Nessus/temp/scan results.png",
+    "Scanner/Untitled/bassel/Nessus/temp/Screenshot 2026-03-18 172707.png",
+    "Scanner/Untitled/bassel/Nessus/temp/python_old.png",
+    "Scanner/Untitled/bassel/Lynis/3.png",
+    "Scanner/Untitled/bassel/Lynis/4.png",
+    "Scanner/Untitled/bassel/openvas/temp",
+    "Scanner/Untitled/bassel/openvas",
+    "Scanner/Untitled/bassel/Nessus/temp",
+    "Scanner/Untitled/bassel/Nessus",
+    "Scanner/Untitled/bassel/Lynis",
+    "Scanner/Untitled/bassel",
     "Services/SSH.md",
-    "Services",
-    "Kali/01- Linux Basics.md",
-    "Kali/00 Kali.md",
-    "Vulnerability Scanning/01- Vulnerability Scanning.md",
-    "Tools/03- Powershell& Powercat.md",
-    "Tools/02- Socat.md",
+    "Scanner/Untitled",
+    "Scanner",
     "Tools/01- Netcat.md",
-    "Tools/00- tools.md",
-    "Tools/05- Wireshark.md",
-    "Tools/06- TCPdumb.md",
-    "Passive Recon/01- Intro.md",
-    "Passive Recon/imgs/Screenshot 2025-06-07 145206.png",
-    "Passive Recon/imgs",
-    "Passive Recon/05- Opensource Code Enumeration.md",
-    "Passive Recon/2.2 User Recon.md",
+    "Active Recon/01- DNS Enumeration.md",
     "Passive Recon/06- OSINT & Maltego.md",
-    "Passive Recon/00- passive.md",
-    "http.md",
-    "images.jpg"
+    "Passive Recon/05- Opensource Code Enumeration.md",
+    "Passive Recon/04- Whois & Subdomain Enumeration.md",
+    "Passive Recon/03- Search Engine & GHDB.md",
+    "Untitled.canvas",
+    "Untitled.base",
+    "Services"
   ]
 }

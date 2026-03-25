@@ -191,3 +191,5 @@ socat TCP4-LISTEN:4000,fork FILE:/etc/passwd
 # Receive file:
 socat TCP4:<ip>:4000 FILE:output.txt,create
 ```
+### [[03- Powershell& Powercat|Next]]
+

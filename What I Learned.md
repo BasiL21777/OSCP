@@ -25,3 +25,7 @@
 - [ ] Learn Cron 
 - [ ] Learn Docker 
 - [ ] Learn SMTB
+- [ ] How to know if the system is attacked 
+	- [ ] kali files 
+	- [ ] win files
+	- [ ] 

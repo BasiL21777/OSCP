@@ -3,7 +3,7 @@
 ## **Lesson 2: Port Scanning**
 
 ---
-### 🔹 **What Is Port Scanning?**
+###  **What Is Port Scanning?**
 
 Port scanning is the process of sending packets to specific ports on a target machine to:
 
@@ -14,11 +14,11 @@ Port scanning is the process of sending packets to specific ports on a target ma
 - Detect **vulnerabilities or misconfigurations** in these services
     
 
-> 🛠️ Once open services are identified, attackers can research known **exploits** or perform **manual testing** to check for weaknesses.
+>  Once open services are identified, attackers can research known **exploits** or perform **manual testing** to check for weaknesses.
 
 ---
 
-### 🔸 **Why Do Attackers Scan Ports?**
+###  **Why Do Attackers Scan Ports?**
 
 - To fingerprint exposed services (e.g., SSH, HTTP, FTP)
     
@@ -29,7 +29,7 @@ Port scanning is the process of sending packets to specific ports on a target ma
 
 ---
 
-### ⚠️ **Security Awareness**
+###  **Security Awareness**
 
 If the target admin is **security-aware**, they may use **anti-enumeration techniques**, such as:
 
@@ -44,15 +44,15 @@ If the target admin is **security-aware**, they may use **anti-enumeration techn
 - **IDS/IPS systems** to detect and block scans
     
 
-> ❗ **Important:** Port scanning **can be noisy** and may trigger security alerts. If you're scanning without permission, it’s considered **illegal and unethical**.
+>  **Important:** Port scanning **can be noisy** and may trigger security alerts. If you're scanning without permission, it’s considered **illegal and unethical**.
 
 ---
 
-### 🔹 **TCP vs UDP Scanning**
+###  **TCP vs UDP Scanning**
 
 ---
 
-#### ✅ **TCP (Transmission Control Protocol)**
+####  **TCP (Transmission Control Protocol)**
 
 - Uses the **3-way handshake**:
     
@@ -73,7 +73,7 @@ If the target admin is **security-aware**, they may use **anti-enumeration techn
 
 ---
 
-#### ✅ **UDP (User Datagram Protocol)**
+####  **UDP (User Datagram Protocol)**
 
 - **Connectionless** protocol — no handshake
     
@@ -94,7 +94,7 @@ If the target admin is **security-aware**, they may use **anti-enumeration techn
     - Requires longer timeouts to confirm no response ≠ closed
         
 
-> 🤖 **GPT Explains Why UDP Scanning Is Slower:**
+>  **GPT Explains Why UDP Scanning Is Slower:**
 
 - Because UDP does **not guarantee delivery or acknowledgment**, scanners must **wait longer** for potential responses or timeouts before determining if the port is open or filtered.
     
@@ -103,11 +103,11 @@ If the target admin is **security-aware**, they may use **anti-enumeration techn
 
 ---
 
-### 🔹 **Port Scanning with `nc` (Netcat) and Wireshark**
+###  **Port Scanning with `nc` (Netcat) and Wireshark**
 
 ---
 
-#### 📡 **TCP Port Scanning Example**
+####  **TCP Port Scanning Example**
 
 1. On **target machine (listener)**:
     
@@ -134,7 +134,7 @@ If the target admin is **security-aware**, they may use **anti-enumeration techn
 
 ---
 
-#### 📡 **UDP Port Scanning Example**
+####  **UDP Port Scanning Example**
 
 1. On **target machine (listener)**:
     
@@ -161,7 +161,7 @@ If the target admin is **security-aware**, they may use **anti-enumeration techn
 
 ---
 
-### ✅ **Summary**
+###  **Summary**
 
 |Feature|TCP|UDP|
 |---|---|---|

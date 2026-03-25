@@ -1,8 +1,8 @@
-## 🧠 Bash Scripting : Introduction
+##  Bash Scripting : Introduction
 
 ---
 
-### 📌 What is Bash?
+###  What is Bash?
 
 1. **Bash** is a _shell environment_ — a command-line interpreter like Python or PowerShell.
     
@@ -19,7 +19,7 @@
 
 ---
 
-### 🧾 File Execution Rules
+###  File Execution Rules
 
 You can run Bash scripts in multiple ways:
 
@@ -30,11 +30,11 @@ You can run Bash scripts in multiple ways:
 |`#!/bin/bash` in the script|Tells OS this is a Bash script|
 |`.sh` file extension|Common convention, but not required|
 
-> 🧠 `#!/bin/python` would make it run using Python instead.
+>  `#!/bin/python` would make it run using Python instead.
 
 ---
 
-### 🔑 Make Script Executable
+###  Make Script Executable
 
 ```bash
 chmod +x file.sh
@@ -42,7 +42,7 @@ chmod +x file.sh
 
 ---
 
-### 🔄 Command Substitution
+###  Command Substitution
 
 Used to assign command output to a variable or insert into strings.
 
@@ -56,7 +56,7 @@ echo "Date is: `date`"
 
 ---
 
-### 🧮 Script Arguments and Special Variables
+###  Script Arguments and Special Variables
 
 |Symbol|Description|
 |---|---|
@@ -71,7 +71,7 @@ echo "Date is: `date`"
 
 ---
 
-### 🧪 Example 1: Variables and Substitution
+###  Example 1: Variables and Substitution
 
 ```bash
 #!/bin/bash
@@ -92,7 +92,7 @@ echo "Date (method 2): `date`"
 echo "arg0: $0, arg1: $1, arg2: $2"
 ```
 
-#### 💡 Run Example:
+####  Run Example:
 
 ```bash
 ./file.sh Bassel 21
@@ -100,7 +100,7 @@ echo "arg0: $0, arg1: $1, arg2: $2"
 
 ---
 
-### 🧪 Example 2:  Process Testing
+###  Example 2:  Process Testing
 
 ``` bash
 #!/bin/bash
@@ -110,7 +110,7 @@ kill -9 $$
 echo "This will never print"
 ```
 
-#### 🔍 Monitor with:
+####  Monitor with:
 
 ```bash
 watch -n 0.5 -d "ps aux | grep sleep"
@@ -118,4 +118,5 @@ watch -n 0.5 -d "ps aux | grep sleep"
 
 This shows the running `sleep` command and helps you observe the process before it gets killed.
 
----
+ ### [[02- IF , Loops , Functions|Next]]
+ 

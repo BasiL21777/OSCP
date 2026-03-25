@@ -1,8 +1,8 @@
-### 🔎 **3# NMAP - Basic and Stealth Scanning**
+###  **3# NMAP - Basic and Stealth Scanning**
 
 ---
 
-#### ✅ **Basic Nmap Scan**
+####  **Basic Nmap Scan**
 
 - **Command:**
     
@@ -19,7 +19,7 @@
 
 ---
 
-### ⚠️ **Nmap Can Be Intensive**
+###  **Nmap Can Be Intensive**
 
 - Running Nmap on a **Metasploitable** (or any target) can generate **high traffic**.
     
@@ -34,7 +34,7 @@
 
 ---
 
-### 🔐 **Restrict Target Machine Traffic (on Metasploitable)**
+###  **Restrict Target Machine Traffic (on Metasploitable)**
 
 Use `iptables` to allow only specific IPs to communicate:
 
@@ -47,7 +47,7 @@ sudo iptables -I OUTPUT 1 -d 192.168.1.8 -j ACCEPT
 
 ---
 
-### 🥷 **Stealth Scan (-sS)**
+###  **Stealth Scan (-sS)**
 
 - **Command:**
     
@@ -75,7 +75,7 @@ sudo iptables -I OUTPUT 1 -d 192.168.1.8 -j ACCEPT
 
 ---
 
-### 🔗 **Connect Scan (-sT)**
+###  **Connect Scan (-sT)**
 
 - **Command:**
     
@@ -99,7 +99,7 @@ sudo iptables -I OUTPUT 1 -d 192.168.1.8 -j ACCEPT
 
 ---
 
-### 🧪 **Firewall Detection Scans**
+###  **Firewall Detection Scans**
 
 Used to **detect filtering/firewall presence** rather than open ports:
 
@@ -110,7 +110,7 @@ Used to **detect filtering/firewall presence** rather than open ports:
 
 ---
 
-### 🌐 **UDP Scanning**
+###  **UDP Scanning**
 
 - **Slower and less reliable** than TCP scanning.
     
@@ -127,7 +127,7 @@ Used to **detect filtering/firewall presence** rather than open ports:
     ```
     
 
-#### ⏱️ **UDP Response Interpretations**
+####  **UDP Response Interpretations**
 
 | Response                                     | Meaning                                  |
 | -------------------------------------------- | ---------------------------------------- |
@@ -135,7 +135,7 @@ Used to **detect filtering/firewall presence** rather than open ports:
 | **No Response (retry)**                      | Port is **filtered** (possible firewall) |
 | **Service Response (e.g., NetBIOS for 137)** | Port is **open**                         |
 
-#### 🔄 Example Interpretations:
+####  Example Interpretations:
 
 ```bash
 nmap 192.168.1.4 -p 4444 -sU  → closed (if unreachable)
@@ -145,7 +145,7 @@ nmap 192.168.1.4 -p 137 -sU   → open (if it replies with NetBIOS data)
 
 ---
 
-### 💾 **Save Results**
+###  **Save Results**
 
 Because UDP scans are **slow**, you should **save** the output:
 
@@ -155,7 +155,7 @@ sudo nmap 192.168.1.4 -sU -oN udp_scan_results.txt
 
 ---
 
-### ✅ Summary of Scan Types:
+###  Summary of Scan Types:
 
 |Scan Type|Flag|Root Needed?|Detectable?|Notes|
 |---|---|---|---|---|

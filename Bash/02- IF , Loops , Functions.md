@@ -1,10 +1,10 @@
-## 🧠 Bash Scripting – Lesson 3: `if`, `else`, `elif`, Loops, and Functions
+##  Bash Scripting – Lesson 3: `if`, `else`, `elif`, Loops, and Functions
 
 ---
 
-### 1️⃣ `if`, `else`, `elif` Statements
+###  `if`, `else`, `elif` Statements
 
-#### ✅ Syntax:
+####  Syntax:
 
 ```bash
 #!/bin/bash
@@ -20,9 +20,9 @@ else
 fi
 ```
 
-> ✅ **Use `-gt` instead of `>`** for numeric comparison in Bash. Always quote variables (`"$grade"`) to avoid issues with empty values.
+>  **Use `-gt` instead of `>`** for numeric comparison in Bash. Always quote variables (`"$grade"`) to avoid issues with empty values.
 
-#### 🔢 Numeric comparison operators:
+####  Numeric comparison operators:
 
 |Operator|Meaning|
 |---|---|
@@ -35,7 +35,7 @@ fi
 
 ---
 
-### 2️⃣ Logical Operators
+###  Logical Operators
 
 |Operator|Meaning|
 |---|---|
@@ -43,7 +43,7 @@ fi
 |`&&` / `-a`|AND|
 |`||
 
-#### ✅ Example:
+####  Example:
 
 ```bash
 if [ "$grade" -gt 80 ] && [ "$grade" -lt 90 ]; then
@@ -53,9 +53,9 @@ fi
 
 ---
 
-### 3️⃣ Loops in Bash
+###  Loops in Bash
 
-#### 🔁 `for` Loop
+####  `for` Loop
 
 ```bash
 for i in 1 2 6 8; do
@@ -63,7 +63,7 @@ for i in 1 2 6 8; do
 done
 ```
 
-#### 🔁 Using `seq`:
+####  Using `seq`:
 
 ```bash
 for i in $(seq 1 10); do
@@ -71,7 +71,7 @@ for i in $(seq 1 10); do
 done
 ```
 
-#### 🔁 Using brace expansion:
+####  Using brace expansion:
 
 ```bash
 for i in {1..10}; do
@@ -79,7 +79,7 @@ for i in {1..10}; do
 done
 ```
 
-#### ✅ Full Example:
+####  Full Example:
 
 ```bash
 #!/bin/bash
@@ -91,7 +91,7 @@ done
 
 ---
 
-### 4️⃣ `while` Loop
+###  `while` Loop
 
 ```bash
 #!/bin/bash
@@ -105,9 +105,9 @@ done
 
 ---
 
-### 5️⃣ Functions in Bash
+###  Functions in Bash
 
-#### ✅ Basic Function Example
+####  Basic Function Example
 
 ```bash
 #!/bin/bash
@@ -119,7 +119,7 @@ greet() {
 greet "$1"
 ```
 
-> 🎯 Run the script with a name:
+>  Run the script with a name:
 
 ```bash
 ./script.sh Bassel
@@ -127,7 +127,7 @@ greet "$1"
 
 ---
 
-### 🧠 Bonus Tips:
+###  Bonus Tips:
 
 - You **must define the function before calling it** in Bash.
     
@@ -137,3 +137,4 @@ greet "$1"
     
 
 ---
+### [[03- Exercise 1|Next]]

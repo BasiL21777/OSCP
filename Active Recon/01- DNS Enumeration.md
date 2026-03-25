@@ -3,11 +3,11 @@
 ## **Lesson 1: DNS Enumeration**
 
 ---
-### 🔹 **1. Basics of DNS**
+###  **1. Basics of DNS**
 
 ---
 
-#### ✅ **What is DNS?**
+####  **What is DNS?**
 
 - DNS (Domain Name System) is like a **phonebook for the internet**. It translates domain names (like `google.com`) into IP addresses.
     
@@ -16,7 +16,7 @@
 - If an attacker **modifies DNS records**, they can redirect users to **malicious websites** — a major security risk.
     
 
-#### ✅ **How DNS Works**
+####  **How DNS Works**
 
 1. **Browser checks cache** for recent domain-IP mappings.
     
@@ -25,11 +25,11 @@
 3. If still not found, it queries the **configured DNS server**.
     
 
-> ⚠️ **DNS can be attacked**, and misconfigurations can expose valuable information.
+>  **DNS can be attacked**, and misconfigurations can expose valuable information.
 
 ---
 
-#### ✅ **Common DNS Record Types**
+####  **Common DNS Record Types**
 
 |Type|Description|Example|
 |---|---|---|
@@ -38,15 +38,15 @@
 |`CNAME`|Maps alias to hostname|(e.g., www → main.example.com)|
 |`MX`|Mail exchange servers|`host -t mx google.com`|
 
-> ℹ️ Use `host` for simple queries. `dig` provides more advanced options.
+>  Use `host` for simple queries. `dig` provides more advanced options.
 
 ---
 
-### 🔹 **2. Brute Force DNS Lookups**
+###  **2. Brute Force DNS Lookups**
 
 ---
 
-#### 🔸 **Forward Brute Force Lookup**
+####  **Forward Brute Force Lookup**
 
 Try to find subdomains using a wordlist:
 
@@ -56,7 +56,7 @@ for sub in $(cat /usr/share/wordlists/seclists/Discovery/DNS/fierce-hostlist.txt
 done
 ```
 
-#### 🔸 **Reverse Brute Force Lookup**
+####  **Reverse Brute Force Lookup**
 
 Check a subnet for hostnames:
 
@@ -66,7 +66,7 @@ for n in {1..255}; do
 done
 ```
 
-> ⚠️ Not all IPs return valid hostnames. Some may belong to unrelated services (e.g., CloudFront).
+>  Not all IPs return valid hostnames. Some may belong to unrelated services (e.g., CloudFront).
 
 **Example:**
 
@@ -77,9 +77,9 @@ host -t ptr 108.159.102.34 # → cloudfront.net (not related to grab.com)
 
 ---
 
-### 🔹 **3. DNS Zone Transfer (AXFR)**
+###  **3. DNS Zone Transfer (AXFR)**
 
-#### ✅ **What Is It?**
+####  **What Is It?**
 
 - Zone Transfer dumps the full DNS database (zone file) of a domain.
     
@@ -96,7 +96,7 @@ host -t ptr 108.159.102.34 # → cloudfront.net (not related to grab.com)
 
 ---
 
-#### ✅ **Steps to Perform Zone Transfer**
+####  **Steps to Perform Zone Transfer**
 
 1. **Find name servers (NS):**
     
@@ -112,11 +112,11 @@ host -t ns megacorpone.com
 host -l megacorpone.com ns3.megacorpone.com
 ```
 
-> ❗ Try other NS entries (`ns1`, `ns2`, etc.) if one fails.
+>  Try other NS entries (`ns1`, `ns2`, etc.) if one fails.
 
 ---
 
-#### ✅ **Automated Bash Script**
+####  **Automated Bash Script**
 
 ```bash
 #!/bin/bash
@@ -132,7 +132,7 @@ done
 
 ---
 
-#### ✅ **Zone Transfer Tools**
+####  **Zone Transfer Tools**
 
 |Tool|Usage|
 |---|---|
@@ -143,7 +143,7 @@ done
 
 ---
 
-### ✅ **Summary**
+###  **Summary**
 
 DNS enumeration is a powerful technique used during **active reconnaissance** to map domain names, discover subdomains, reveal misconfigurations, and even retrieve internal infrastructure through zone transfers.
 
