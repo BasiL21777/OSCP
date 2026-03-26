@@ -59,12 +59,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kali/00 Kali.md",
-                "mode": "source",
+                "file": "Kali/Bandit CTF.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 Kali"
+              "title": "Bandit CTF"
             }
           }
         ],
@@ -239,6 +239,7 @@
   },
   "active": "0aca80d2c9deca19",
   "lastOpenFiles": [
+    "Kali/00 Kali.md",
     "What I Learned.md",
     "Kali/Find & String.md",
     "Passive Recon/00- passive.md",
@@ -249,7 +250,6 @@
     "Kali/07-Text Search ,Manipulation & Compare Files.md",
     "Kali/Bandit CTF.md",
     "the-alphabet-in-numbers-free-printable.webp",
-    "Kali/00 Kali.md",
     "Bash/00- bash.md",
     "Kali/01- Linux Basics.md",
     "Kali/08 File and Command Monitoring.md",
