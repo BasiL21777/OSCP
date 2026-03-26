@@ -22,10 +22,8 @@
 - LVL 11 :     dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 	- `cat data.txt | tr 'A-Za-z'  'N-ZA-Mn-za-m'`
 - LVL 12 :      7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
-	- 
-- LVL 13 :
-	- 
-- LVL 14 :     
+- LVL 13 :       
+- LVL 14 :       
 - LVL 15 :     
 - LVL 16 :     
 - LVL 17 :     
