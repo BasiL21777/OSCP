@@ -121,13 +121,11 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "6c24c5339eaa70ef",
@@ -237,7 +235,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0aca80d2c9deca19",
+  "active": "a1690e030b0a8bc0",
   "lastOpenFiles": [
     "Kali/00 Kali.md",
     "What I Learned.md",
@@ -249,7 +247,7 @@
     "Tools/FUFF.md",
     "Kali/07-Text Search ,Manipulation & Compare Files.md",
     "Kali/Bandit CTF.md",
-    "the-alphabet-in-numbers-free-printable.webp",
+    "Kali/the-alphabet-in-numbers-free-printable.webp",
     "Bash/00- bash.md",
     "Kali/01- Linux Basics.md",
     "Kali/08 File and Command Monitoring.md",
